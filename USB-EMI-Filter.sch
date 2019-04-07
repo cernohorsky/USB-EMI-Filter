@@ -1,0 +1,369 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L device:C C1
+U 1 1 5CA9D511
+P 4625 3400
+F 0 "C1" H 4740 3446 50  0000 L CNN
+F 1 "100n" H 4740 3355 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 4663 3250 50  0001 C CNN
+F 3 "~" H 4625 3400 50  0001 C CNN
+	1    4625 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:L L1
+U 1 1 5CA9D99F
+P 6800 3150
+F 0 "L1" V 6990 3150 50  0000 C CNN
+F 1 "742792641" V 6899 3150 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603" H 6800 3150 50  0001 C CNN
+F 3 "~" H 6800 3150 50  0001 C CNN
+	1    6800 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L device:C C3
+U 1 1 5CAA1CDC
+P 6550 3375
+F 0 "C3" H 6665 3421 50  0000 L CNN
+F 1 "1u" H 6665 3330 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 6588 3225 50  0001 C CNN
+F 3 "~" H 6550 3375 50  0001 C CNN
+	1    6550 3375
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C C4
+U 1 1 5CAA3B9A
+P 7075 3375
+F 0 "C4" H 7190 3421 50  0000 L CNN
+F 1 "10u" H 7190 3330 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 7113 3225 50  0001 C CNN
+F 3 "~" H 7075 3375 50  0001 C CNN
+	1    7075 3375
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C_Feedthrough C2
+U 1 1 5CAA5ACD
+P 5850 3250
+F 0 "C2" H 5850 3555 50  0000 C CNN
+F 1 "NFM18PS105R0J3D" H 5850 3464 50  0000 C CNN
+F 2 "KiCAD-Library:C_0603-3Terminal" V 5850 3250 50  0001 C CNN
+F 3 "~" V 5850 3250 50  0001 C CNN
+	1    5850 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 3150 5650 3150
+Wire Wire Line
+	6050 3150 6550 3150
+Wire Wire Line
+	6550 3225 6550 3150
+Connection ~ 6550 3150
+Wire Wire Line
+	6550 3150 6650 3150
+Wire Wire Line
+	6950 3150 7075 3150
+Wire Wire Line
+	7075 3150 7075 3225
+Wire Wire Line
+	5100 3150 4625 3150
+Wire Wire Line
+	4625 3150 4625 3250
+$Comp
+L power:GND #PWR0101
+U 1 1 5CAA6BB0
+P 4625 3600
+F 0 "#PWR0101" H 4625 3350 50  0001 C CNN
+F 1 "GND" H 4630 3427 50  0000 C CNN
+F 2 "" H 4625 3600 50  0001 C CNN
+F 3 "" H 4625 3600 50  0001 C CNN
+	1    4625 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5CAA722B
+P 5050 3600
+F 0 "#PWR0102" H 5050 3350 50  0001 C CNN
+F 1 "GND" H 5055 3427 50  0000 C CNN
+F 2 "" H 5050 3600 50  0001 C CNN
+F 3 "" H 5050 3600 50  0001 C CNN
+	1    5050 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5CAA7674
+P 5550 3600
+F 0 "#PWR0103" H 5550 3350 50  0001 C CNN
+F 1 "GND" H 5555 3427 50  0000 C CNN
+F 2 "" H 5550 3600 50  0001 C CNN
+F 3 "" H 5550 3600 50  0001 C CNN
+	1    5550 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5CAA7BA3
+P 5850 3600
+F 0 "#PWR0104" H 5850 3350 50  0001 C CNN
+F 1 "GND" H 5855 3427 50  0000 C CNN
+F 2 "" H 5850 3600 50  0001 C CNN
+F 3 "" H 5850 3600 50  0001 C CNN
+	1    5850 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5CAA7FC5
+P 6550 3600
+F 0 "#PWR0105" H 6550 3350 50  0001 C CNN
+F 1 "GND" H 6555 3427 50  0000 C CNN
+F 2 "" H 6550 3600 50  0001 C CNN
+F 3 "" H 6550 3600 50  0001 C CNN
+	1    6550 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5CAA853F
+P 7075 3600
+F 0 "#PWR0106" H 7075 3350 50  0001 C CNN
+F 1 "GND" H 7080 3427 50  0000 C CNN
+F 2 "" H 7075 3600 50  0001 C CNN
+F 3 "" H 7075 3600 50  0001 C CNN
+	1    7075 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4625 3550 4625 3600
+Wire Wire Line
+	5850 3350 5850 3600
+Wire Wire Line
+	6550 3525 6550 3600
+Wire Wire Line
+	7075 3525 7075 3600
+$Comp
+L device:EMI_Filter_LL_1423 FL1
+U 1 1 5CA9F983
+P 5300 3050
+F 0 "FL1" H 5300 3331 50  0000 C CNN
+F 1 "744221" H 5300 3240 50  0000 C CNN
+F 2 "Inductors_SMD:L_CommonMode_Wuerth_WE-SL2" H 5300 2800 50  0001 C CNN
+F 3 "~" V 5300 3090 50  0001 C CNN
+	1    5300 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 2950 5550 2950
+Wire Wire Line
+	5550 2950 5550 3600
+Wire Wire Line
+	5100 2950 5050 2950
+Wire Wire Line
+	5050 2950 5050 3600
+$Comp
+L conn:USB_A J1
+U 1 1 5CABA6CB
+P 3725 3350
+F 0 "J1" H 3782 3817 50  0000 C CNN
+F 1 "USB_A" H 3782 3726 50  0000 C CNN
+F 2 "KiCAD-Library:USB_A-Male" H 3875 3300 50  0001 C CNN
+F 3 "" H 3875 3300 50  0001 C CNN
+	1    3725 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4025 3150 4625 3150
+Connection ~ 4625 3150
+$Comp
+L power:GND #PWR0107
+U 1 1 5CABD3C9
+P 3725 3800
+F 0 "#PWR0107" H 3725 3550 50  0001 C CNN
+F 1 "GND" H 3730 3627 50  0000 C CNN
+F 2 "" H 3725 3800 50  0001 C CNN
+F 3 "" H 3725 3800 50  0001 C CNN
+	1    3725 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3625 3750 3625 3775
+Wire Wire Line
+	3625 3775 3725 3775
+Wire Wire Line
+	3725 3775 3725 3750
+Wire Wire Line
+	3725 3775 3725 3800
+Connection ~ 3725 3775
+$Comp
+L conn:USB_A J2
+U 1 1 5CABDE7A
+P 8200 3350
+F 0 "J2" H 8257 3817 50  0000 C CNN
+F 1 "USB_A" H 8257 3726 50  0000 C CNN
+F 2 "Connectors:USB_A" H 8350 3300 50  0001 C CNN
+F 3 "" H 8350 3300 50  0001 C CNN
+	1    8200 3350
+	1    0    0    -1  
+$EndComp
+Text Label 7575 3150 0    50   ~ 0
+Vout
+Text Label 8500 3150 0    50   ~ 0
+Vout
+$Comp
+L power:GND #PWR0108
+U 1 1 5CAC0F15
+P 8200 3825
+F 0 "#PWR0108" H 8200 3575 50  0001 C CNN
+F 1 "GND" H 8205 3652 50  0000 C CNN
+F 2 "" H 8200 3825 50  0001 C CNN
+F 3 "" H 8200 3825 50  0001 C CNN
+	1    8200 3825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 3750 8100 3775
+Wire Wire Line
+	8100 3775 8200 3775
+Wire Wire Line
+	8200 3775 8200 3750
+Wire Wire Line
+	8200 3775 8200 3825
+Connection ~ 8200 3775
+Text Label 4025 3350 0    50   ~ 0
+D+
+Text Label 4025 3450 0    50   ~ 0
+D-
+$Comp
+L SamacSys_Parts:744232090 L2
+U 1 1 5CAC928F
+P 4825 4350
+F 0 "L2" H 5225 4615 50  0000 C CNN
+F 1 "744232090" H 5225 4524 50  0000 C CNN
+F 2 "SamacSys_Parts:744232090" H 5475 4450 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/744232090.pdf" H 5475 4350 50  0001 L CNN
+F 4 "Common Mode Line Filter CNSW 1206 90Ohm Wurth WE-CNSW SMD Series Wire-wound SMD Inductor with a Ferrite Core, ??25% 370mA Idc" H 5475 4250 50  0001 L CNN "Description"
+F 5 "" H 5475 4150 50  0001 L CNN "Height"
+F 6 "710-744232090" H 5475 4050 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=710-744232090" H 5475 3950 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Wurth Elektronik" H 5475 3850 50  0001 L CNN "Manufacturer_Name"
+F 9 "744232090" H 5475 3750 50  0001 L CNN "Manufacturer_Part_Number"
+	1    4825 4350
+	1    0    0    -1  
+$EndComp
+Text Label 4825 4450 2    50   ~ 0
+D+
+Text Label 5625 4350 0    50   ~ 0
+D-
+Text Label 4825 4350 2    50   ~ 0
+Do+
+Text Label 5625 4450 0    50   ~ 0
+Do-
+Text Label 8500 3350 0    50   ~ 0
+Do+
+Text Label 8500 3450 0    50   ~ 0
+Do-
+$Comp
+L device:C C5
+U 1 1 5CAD770C
+P 7325 3375
+F 0 "C5" H 7440 3421 50  0000 L CNN
+F 1 "dnp" H 7440 3330 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 7363 3225 50  0001 C CNN
+F 3 "~" H 7325 3375 50  0001 C CNN
+	1    7325 3375
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C C6
+U 1 1 5CAD7D6D
+P 7575 3375
+F 0 "C6" H 7690 3421 50  0000 L CNN
+F 1 "dbp" H 7690 3330 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 7613 3225 50  0001 C CNN
+F 3 "~" H 7575 3375 50  0001 C CNN
+	1    7575 3375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7075 3150 7325 3150
+Wire Wire Line
+	7575 3150 7575 3225
+Connection ~ 7075 3150
+Wire Wire Line
+	7325 3225 7325 3150
+Connection ~ 7325 3150
+Wire Wire Line
+	7325 3150 7575 3150
+$Comp
+L power:GND #PWR0109
+U 1 1 5CAD8D14
+P 7325 3600
+F 0 "#PWR0109" H 7325 3350 50  0001 C CNN
+F 1 "GND" H 7330 3427 50  0000 C CNN
+F 2 "" H 7325 3600 50  0001 C CNN
+F 3 "" H 7325 3600 50  0001 C CNN
+	1    7325 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 5CAD8F86
+P 7575 3600
+F 0 "#PWR0110" H 7575 3350 50  0001 C CNN
+F 1 "GND" H 7580 3427 50  0000 C CNN
+F 2 "" H 7575 3600 50  0001 C CNN
+F 3 "" H 7575 3600 50  0001 C CNN
+	1    7575 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7325 3525 7325 3600
+Wire Wire Line
+	7575 3525 7575 3600
+$Comp
+L conn:CONN_01X02 J3
+U 1 1 5CADCFC8
+P 7450 4225
+F 0 "J3" H 7528 4266 50  0000 L CNN
+F 1 "CONN_01X02" H 7528 4175 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 7450 4225 50  0001 C CNN
+F 3 "" H 7450 4225 50  0001 C CNN
+	1    7450 4225
+	1    0    0    -1  
+$EndComp
+Text Label 7250 4175 2    50   ~ 0
+Vout
+$Comp
+L power:GND #PWR0111
+U 1 1 5CADD589
+P 7225 4300
+F 0 "#PWR0111" H 7225 4050 50  0001 C CNN
+F 1 "GND" H 7230 4127 50  0000 C CNN
+F 2 "" H 7225 4300 50  0001 C CNN
+F 3 "" H 7225 4300 50  0001 C CNN
+	1    7225 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 4275 7225 4275
+Wire Wire Line
+	7225 4275 7225 4300
+$EndSCHEMATC
